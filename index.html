@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSP Parser Overview</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
+      integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <form class="pure-form">
+        <b>Your CSP</b><br />
+        <textarea
+          name="input-textarea"
+          id="input"
+          placeholder="Copy-paste here the context of your 'Content-Security-Policy' header"
+          cols="80"
+          rows="18"
+        ></textarea
+        ><br />
+        <label
+          ><input id="input-use-plain-text" type="checkbox" />Show each
+          directive content as plain text</label
+        ><br />
+        <input id="input-button" type="button" value="Parse" />
+      </form>
+      <div id="output"></div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
