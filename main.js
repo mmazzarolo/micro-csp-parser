@@ -1,3 +1,5 @@
+import style from './style.css';
+
 const inputTextarea = document.querySelector('#input-textarea');
 const inputUsePlainText = document.querySelector('#input-use-plain-text');
 const inputButton = document.querySelector('#input-button');
